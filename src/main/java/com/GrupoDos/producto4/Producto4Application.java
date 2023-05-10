@@ -5,6 +5,9 @@ import com.GrupoDos.producto4.repository.UserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import com.GrupoDos.producto4.model.Restaurant;
+import com.GrupoDos.producto4.repository.RestaurantRepository;
+
 
 @SpringBootApplication
 public class Producto4Application {
@@ -18,6 +21,12 @@ public class Producto4Application {
 
 		repository.save(user1);
 		repository.save(user2);
+
+		//Creamos restaurante
+		RestaurantRepository repository2 = context.getBean(RestaurantRepository.class);
+		Restaurant restaurant1  = new Restaurant(null, "Casa Pepe", "pepefood@gmail.com", 999999999, "C/Pepe 10", "Linares", 99999, "pepefood.com");
+		repository2.save(restaurant1);
+
 		System.out.println(repository.findAll().size());
 		// repository.deleteById(1L);
 
