@@ -16,7 +16,9 @@ spring:
 
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/testdb
+    url: jdbc:h2:file:./data/sample
+    driver-class: org.h2.Driver
+#    driver-class-name: org.h2.Driver
     username: user
     password: password
     cachePrepStmts: true
@@ -30,13 +32,14 @@ spring:
     generate-ddl: true
     hibernate:
       ddl-auto: create-drop
-    properties:
-      # fixes Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
-      hibernate.jdbc.lob.non_contextual_creation: true
+#    properties:
+#      # fixes Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+#      hibernate.jdbc.lob.non_contextual_creation: true
+    defer-datasource-initialization: true
 
-  data:
-    jpa:
-      repositories.enabled: true
+#  data:
+#    jpa:
+#      repositories.enabled: true
 
 logging:
   level:
@@ -44,4 +47,3 @@ logging:
     org.springframework.security: DEBUG
     com.example: DEBUG
   file: app.log
-  
