@@ -29,7 +29,7 @@ public class UserController {
     // CRUD
 
     // Buscar todos los users
-    @GetMapping("/api/users")
+    @GetMapping("/api/user")
     public List<User> findAll() {
         return userRepository.findAll();
     }
