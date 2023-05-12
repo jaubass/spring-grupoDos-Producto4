@@ -6,10 +6,10 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
 @SpringBootApplication
 @ConfigurationPropertiesScan
-public class DemoApplication {
+public class Producto4Application {
     
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(Producto4Application.class, args);
         System.out.println("\nI am ready to serve!");
     }
     

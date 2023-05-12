@@ -1,6 +1,6 @@
 package com.grupodos.producto4.controller;
 
-import com.grupodos.producto4.DemoApplication;
+import com.grupodos.producto4.Producto4Application;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -9,7 +9,7 @@ import org.springframework.web.context.request.WebRequest;
 
 import static org.springframework.http.ResponseEntity.notFound;
 
-@RestControllerAdvice(basePackageClasses = {DemoApplication.class})
+@RestControllerAdvice(basePackageClasses = {Producto4Application.class})
 @Slf4j
 public class RestExceptionHandler {
     
