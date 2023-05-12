@@ -2,6 +2,7 @@ package com.grupodos.producto4;
 
 import com.grupodos.producto4.model.User;
 import com.grupodos.producto4.model.Vehicle;
+import com.grupodos.producto4.repository.RestaurantRepository;
 import com.grupodos.producto4.repository.UserRepository;
 import com.grupodos.producto4.repository.VehicleRepository;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,8 @@ public class DataInitializer implements CommandLineRunner {
     private final UserRepository users;
     
     private final PasswordEncoder passwordEncoder;
+
+    private final RestaurantRepository restaurantRepo;
     
     @Override
     public void run(String... args) {
@@ -47,5 +50,7 @@ public class DataInitializer implements CommandLineRunner {
         
         log.debug("printing all users...");
         this.users.findAll().forEach(v -> log.debug(" User :" + v.toString()));
+
+        // Add Restaurants to database
     }
 }
