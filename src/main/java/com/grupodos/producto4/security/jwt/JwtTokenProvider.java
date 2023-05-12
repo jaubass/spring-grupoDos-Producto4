@@ -1,4 +1,4 @@
-package com.example.demo.security.jwt;
+package com.grupodos.producto4.security.jwt;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

@@ -1,8 +1,8 @@
-package com.example.demo.config;
+package com.grupodos.producto4.config;
 
-import com.example.demo.repository.UserRepository;
-import com.example.demo.security.jwt.JwtTokenAuthenticationFilter;
-import com.example.demo.security.jwt.JwtTokenProvider;
+import com.grupodos.producto4.repository.UserRepository;
+import com.grupodos.producto4.security.jwt.JwtTokenAuthenticationFilter;
+import com.grupodos.producto4.security.jwt.JwtTokenProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -10,7 +10,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
-import org.springframework.security.authentication.ProviderManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;

@@ -1,6 +1,6 @@
-package com.example.demo.web;
+package com.grupodos.producto4.controllers;
 
-import com.example.demo.DemoApplication;
+import com.grupodos.producto4.DemoApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

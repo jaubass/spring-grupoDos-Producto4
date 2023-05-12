@@ -1,6 +1,6 @@
-package com.example.demo;
+package com.grupodos.producto4;
 
-import com.example.demo.web.VehicleForm;
+import com.grupodos.producto4.controllers.VehicleForm;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.junit.jupiter.api.BeforeEach;

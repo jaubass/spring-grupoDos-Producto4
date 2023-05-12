@@ -1,7 +1,7 @@
-package com.example.demo.repository;
+package com.grupodos.producto4.repository;
 
-import com.example.demo.domain.Brand;
-import com.example.demo.domain.Vehicle;
+import com.grupodos.producto4.models.Brand;
+import com.grupodos.producto4.models.Vehicle;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

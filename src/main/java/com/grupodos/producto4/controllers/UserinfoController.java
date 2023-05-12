@@ -1,4 +1,4 @@
-package com.example.demo.web;
+package com.grupodos.producto4.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.GrantedAuthority;

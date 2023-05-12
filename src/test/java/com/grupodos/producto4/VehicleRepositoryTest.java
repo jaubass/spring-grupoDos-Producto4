@@ -1,7 +1,7 @@
-package com.example.demo;
+package com.grupodos.producto4;
 
-import com.example.demo.domain.Vehicle;
-import com.example.demo.repository.VehicleRepository;
+import com.grupodos.producto4.models.Vehicle;
+import com.grupodos.producto4.repository.VehicleRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

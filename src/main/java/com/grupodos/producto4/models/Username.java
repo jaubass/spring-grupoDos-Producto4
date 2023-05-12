@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.grupodos.producto4.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

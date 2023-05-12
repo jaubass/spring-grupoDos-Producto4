@@ -1,4 +1,4 @@
-package com.example.demo.web;
+package com.grupodos.producto4.controllers;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

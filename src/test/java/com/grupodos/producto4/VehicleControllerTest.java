@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.grupodos.producto4;
 
-import com.example.demo.domain.Brand;
-import com.example.demo.domain.Vehicle;
-import com.example.demo.repository.VehicleRepository;
-import com.example.demo.web.VehicleController;
-import com.example.demo.web.VehicleForm;
+import com.grupodos.producto4.models.Brand;
+import com.grupodos.producto4.models.Vehicle;
+import com.grupodos.producto4.repository.VehicleRepository;
+import com.grupodos.producto4.controllers.VehicleController;
+import com.grupodos.producto4.controllers.VehicleForm;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

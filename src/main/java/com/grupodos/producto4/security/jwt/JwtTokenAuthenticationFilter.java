@@ -1,4 +1,4 @@
-package com.example.demo.security.jwt;
+package com.grupodos.producto4.security.jwt;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

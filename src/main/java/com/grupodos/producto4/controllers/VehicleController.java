@@ -1,8 +1,8 @@
-package com.example.demo.web;
+package com.grupodos.producto4.controllers;
 
-import com.example.demo.domain.Brand;
-import com.example.demo.domain.Vehicle;
-import com.example.demo.repository.VehicleRepository;
+import com.grupodos.producto4.models.Brand;
+import com.grupodos.producto4.models.Vehicle;
+import com.grupodos.producto4.repository.VehicleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

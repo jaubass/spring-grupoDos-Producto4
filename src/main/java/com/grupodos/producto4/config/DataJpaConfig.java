@@ -1,6 +1,6 @@
-package com.example.demo.config;
+package com.grupodos.producto4.config;
 
-import com.example.demo.domain.Username;
+import com.grupodos.producto4.models.Username;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;
