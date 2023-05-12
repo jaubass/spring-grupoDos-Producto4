@@ -58,9 +58,9 @@ public class DataInitializer implements CommandLineRunner {
         );
 
         // Add MenuItems to DB
-        Restaurant restaurant = this.restaurants.getReferenceById(1L);
-        System.out.println("Aqui el restaurant:");
-        System.out.println(restaurant);
+//        Restaurant restaurant = this.restaurants.getReferenceById(1L);
+//        System.out.println("Aqui el restaurant:");
+//        System.out.println(restaurant);
 
 //        MenuItem ensaladaCaprese = new MenuItem("Ensalada Caprese", "Tomates, mozzarella fresca y albahaca", 10.99, "Entrantes ", restaurant);
 //        MenuItem bruschetta = new MenuItem("Bruschetta de tomate y albahaca", "Rebanadas de pan tostado, tomates, ajo y albahaca", 8.99, "Entrantes  ", restaurant);

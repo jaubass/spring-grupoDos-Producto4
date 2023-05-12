@@ -36,7 +36,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/auth/signin").permitAll()
                         .requestMatchers(HttpMethod.GET, "/vehicles/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/restaurants/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/restaurants/**").permitAll()
                         .requestMatchers(HttpMethod.DELETE, "/vehicles/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.GET, "/v1/vehicles/**").permitAll()
                         .anyRequest().authenticated()

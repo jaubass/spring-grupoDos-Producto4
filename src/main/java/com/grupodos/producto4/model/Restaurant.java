@@ -14,7 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class Restaurant extends AbstractAuditableEntity implements Serializable {
+public class Restaurant extends AbstractAuditableEntity<Long> implements Serializable {
 
     @Column
     private String name;
