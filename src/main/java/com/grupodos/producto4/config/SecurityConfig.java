@@ -36,7 +36,9 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/auth/signin").permitAll()
                         .requestMatchers(HttpMethod.GET, "/error").permitAll()          // Development
+                        .requestMatchers(HttpMethod.GET, "/restaurants/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/restaurants/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/menu/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/menu/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/menu/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/api/menu/**").hasRole("ADMIN")
