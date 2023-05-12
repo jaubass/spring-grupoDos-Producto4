@@ -1,4 +1,4 @@
-package com.grupodos.producto4.controllers;
+package com.grupodos.producto4.controller;
 
 public class VehicleNotFoundException extends RuntimeException {
     public VehicleNotFoundException() {

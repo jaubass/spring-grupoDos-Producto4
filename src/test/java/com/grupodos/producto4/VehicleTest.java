@@ -1,6 +1,6 @@
 package com.grupodos.producto4;
 
-import com.grupodos.producto4.models.Vehicle;
+import com.grupodos.producto4.model.Vehicle;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

@@ -1,4 +1,4 @@
-package com.grupodos.producto4.models;
+package com.grupodos.producto4.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

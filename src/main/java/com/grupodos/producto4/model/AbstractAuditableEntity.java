@@ -1,4 +1,4 @@
-package com.grupodos.producto4.models;
+package com.grupodos.producto4.model;
 
 import jakarta.persistence.AttributeOverride;
 import jakarta.persistence.Column;

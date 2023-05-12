@@ -1,6 +1,6 @@
 package com.grupodos.producto4.repository;
 
-import com.grupodos.producto4.models.User;
+import com.grupodos.producto4.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

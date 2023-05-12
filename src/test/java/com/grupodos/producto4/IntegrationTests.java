@@ -1,7 +1,7 @@
 package com.grupodos.producto4;
 
-import com.grupodos.producto4.controllers.AuthenticationRequest;
-import com.grupodos.producto4.controllers.VehicleForm;
+import com.grupodos.producto4.controller.AuthenticationRequest;
+import com.grupodos.producto4.controller.VehicleForm;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

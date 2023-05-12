@@ -1,4 +1,4 @@
-package com.grupodos.producto4.models;
+package com.grupodos.producto4.model;
 
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;

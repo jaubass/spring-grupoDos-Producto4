@@ -1,7 +1,7 @@
-package com.grupodos.producto4.controllers;
+package com.grupodos.producto4.controller;
 
-import com.grupodos.producto4.models.Brand;
-import com.grupodos.producto4.models.Vehicle;
+import com.grupodos.producto4.model.Brand;
+import com.grupodos.producto4.model.Vehicle;
 import com.grupodos.producto4.repository.VehicleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

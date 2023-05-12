@@ -1,4 +1,4 @@
-package com.grupodos.producto4.controllers;
+package com.grupodos.producto4.controller;
 
 import com.grupodos.producto4.repository.UserRepository;
 import com.grupodos.producto4.security.jwt.JwtTokenProvider;

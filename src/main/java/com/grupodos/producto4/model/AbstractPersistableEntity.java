@@ -1,4 +1,4 @@
-package com.grupodos.producto4.models;
+package com.grupodos.producto4.model;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
