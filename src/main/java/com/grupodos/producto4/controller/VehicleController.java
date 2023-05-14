@@ -19,9 +19,9 @@ import static org.springframework.http.ResponseEntity.*;
 @RequestMapping("/v1/vehicles")
 @RequiredArgsConstructor
 public class VehicleController {
-    
+
     private final VehicleRepository vehicles;
-    
+
     @GetMapping("")
     public ResponseEntity<List<Vehicle>> all(@RequestParam(name = "brand", required = false) String[] brands) {
         if (brands == null || brands.length == 0) {
@@ -32,9 +32,9 @@ public class VehicleController {
                     .collect(Collectors.toList());
             return ok(this.vehicles.findByBrandIn(brandList));
         }
-        
+
     }
-    
+
     @SuppressWarnings("rawtypes")
     @PostMapping("")
     public ResponseEntity save(@RequestBody VehicleForm form, HttpServletRequest request) {
@@ -47,22 +47,22 @@ public class VehicleController {
                         .toUri())
                 .build();
     }
-    
+
     @GetMapping("/{id}")
     public ResponseEntity<Vehicle> get(@PathVariable("id") Long id) {
         return ok(this.vehicles.findById(id).orElseThrow(() -> new VehicleNotFoundException()));
     }
-    
+
     @SuppressWarnings("rawtypes")
     @PutMapping("/{id}")
     public ResponseEntity update(@PathVariable("id") Long id, @RequestBody VehicleForm form) {
         Vehicle existed = this.vehicles.findById(id).orElseThrow(() -> new VehicleNotFoundException());
         existed.setName(form.getName());
-        
+
         this.vehicles.save(existed);
         return noContent().build();
     }
-    
+
     @SuppressWarnings("rawtypes")
     @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable("id") Long id) {

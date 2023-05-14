@@ -14,20 +14,20 @@ import java.util.List;
 import static org.springframework.http.ResponseEntity.ok;
 
 @RestController
-@RequestMapping("/api/menu")
+// @RequestMapping("/menu")
 @RequiredArgsConstructor
 public class MenuItemController {
 
-    private final MenuItemRepository items;
+    // private final MenuItemRepository items;
 
-    @GetMapping("")
-    public ResponseEntity<List<MenuItem>> all() {
-        return ok(this.items.findAll());
-    }
+    // @GetMapping("")
+    // public ResponseEntity<List<MenuItem>> all() {
+    //     return ok(this.items.findAll());
+    // }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<MenuItem> get(@PathVariable("id") Long id) {
-        return ok(this.items.findById(id).orElseThrow(() -> new VehicleNotFoundException()));
-    }
+    // @GetMapping("/{id}")
+    // public ResponseEntity<MenuItem> get(@PathVariable("id") Long id) {
+    //     return ok(this.items.findById(id).orElseThrow(() -> new VehicleNotFoundException()));
+    // }
 
 }

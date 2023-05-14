@@ -19,7 +19,7 @@ public class MenuItem extends AbstractAuditableEntity<Long> implements Serializa
     @Column
     private String description;
     @Column
-    private Double price ;
+    private Double price;
     @Column
     private String category;
     @ManyToOne

@@ -14,20 +14,20 @@ import java.util.List;
 import static org.springframework.http.ResponseEntity.ok;
 
 @RestController
-@RequestMapping("/api/restaurants")
+// @RequestMapping("/api/restaurants")
 @RequiredArgsConstructor
 public class RestaurantController {
 
-    private final RestaurantRepository restaurants;
+    // private final RestaurantRepository restaurants;
 
-    @GetMapping("")
-    public ResponseEntity<List<Restaurant>> all() {
-        return ok(this.restaurants.findAll());
-    }
+    // @GetMapping("")
+    // public ResponseEntity<List<Restaurant>> all() {
+    //     return ok(this.restaurants.findAll());
+    // }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Restaurant> get(@PathVariable("id") Long id) {
-        return ok(this.restaurants.findById(id).orElseThrow(() -> new VehicleNotFoundException()));
-    }
+    // @GetMapping("/{id}")
+    // public ResponseEntity<Restaurant> get(@PathVariable("id") Long id) {
+    //     return ok(this.restaurants.findById(id).orElseThrow(() -> new VehicleNotFoundException()));
+    // }
 
 }
