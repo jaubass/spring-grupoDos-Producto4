@@ -64,22 +64,22 @@ public class DataInitializer implements CommandLineRunner {
         // Add MenuItems to DB
         Restaurant restaurant = this.restaurants.getReferenceById(1L);
 
-        MenuItem ensaladaCaprese = new MenuItem("Ensalada Caprese", "Tomates, mozzarella fresca y albahaca", 10.99, "Entrantes ", restaurant);
-        MenuItem bruschetta = new MenuItem("Bruschetta de tomate y albahaca", "Rebanadas de pan tostado, tomates, ajo y albahaca", 8.99, "Entrantes  ", restaurant);
-        MenuItem arancini = new MenuItem("Arancini de risotto", "Bolitas de risotto rellenas de queso mozzarella y fritas", 12.99, "Entrantes  ", restaurant);
-        MenuItem minestrone = new MenuItem("Minestrone", "Sopa de verduras con pasta y frijoles", 9.99, "Entrantes  ", restaurant);
-        MenuItem parmigiana = new MenuItem("Parmigiana di melanzane", "Berenjenas fritas con salsa de tomate, mozzarella y parmesano", 16.99, "Platos principales  ", restaurant);
+        MenuItem ensaladaCaprese = new MenuItem("Ensalada Caprese", "Tomates, mozzarella fresca y albahaca", 10.99, "Entrantes", restaurant);
+        MenuItem bruschetta = new MenuItem("Bruschetta de tomate y albahaca", "Rebanadas de pan tostado, tomates, ajo y albahaca", 8.99, "Entrantes", restaurant);
+        MenuItem arancini = new MenuItem("Arancini de risotto", "Bolitas de risotto rellenas de queso mozzarella y fritas", 12.99, "Entrantes", restaurant);
+        MenuItem minestrone = new MenuItem("Minestrone", "Sopa de verduras con pasta y frijoles", 9.99, "Entrantes", restaurant);
+        MenuItem parmigiana = new MenuItem("Parmigiana di melanzane", "Berenjenas fritas con salsa de tomate, mozzarella y parmesano", 16.99, "Platos principales", restaurant);
         // Otros ejemplos de platos principales:
-        MenuItem pizzaMargherita = new MenuItem("Pizza Margherita", "Mozzarella, tomate y albahaca", 14.99, "Platos principales  ", restaurant);
-        MenuItem lasagna = new MenuItem("Lasagna alla bolognese", "Lasagna con carne picada, salsa boloñesa y queso parmesano", 18.99, "Platos principales  ", restaurant);
-        MenuItem spaghettiCarbonara = new MenuItem("Spaghetti alla carbonara", "Spaghetti con huevo, panceta, queso pecorino y pimienta negra", 17.99, "Platos principales  ", restaurant);
-        MenuItem ravioli = new MenuItem("Ravioli di ricotta e spinaci", "Ravioli rellenos de ricotta y espinacas con salsa de tomate", 20.99, "Platos principales  ", restaurant);
-        MenuItem risotto = new MenuItem("Risotto ai funghi", "Risotto con champiñones, queso parmesano y vino blanco", 19.99, "Platos principales  ", restaurant);
-        MenuItem tiramisu = new MenuItem("Tiramisú", "Bizcochos de soletilla empapados en café, crema de mascarpone y cacao en polvo", 8.99, "Postres  ", restaurant);
-        MenuItem pannaCotta = new MenuItem("Panna cotta", "Flan de nata con coulis de frutos rojos", 7.99, "Postres  ", restaurant);
-        MenuItem cannoli = new MenuItem("Cannoli", "Tubos de masa frita rellenos de ricotta y decorados con frutas confitadas", 9.99, "Postres  ", restaurant);
-        MenuItem gelato = new MenuItem("Gelato", "Helado italiano de varios sabores", 6.99, "Postres  ", restaurant);
-        MenuItem affogato = new MenuItem("Affogato al caffè", "Helado de vainilla con un expreso caliente", 7.99, "Postres  ", restaurant);
+        MenuItem pizzaMargherita = new MenuItem("Pizza Margherita", "Mozzarella, tomate y albahaca", 14.99, "Platos principales", restaurant);
+        MenuItem lasagna = new MenuItem("Lasagna alla bolognese", "Lasagna con carne picada, salsa boloñesa y queso parmesano", 18.99, "Platos principales", restaurant);
+        MenuItem spaghettiCarbonara = new MenuItem("Spaghetti alla carbonara", "Spaghetti con huevo, panceta, queso pecorino y pimienta negra", 17.99, "Platos principales", restaurant);
+        MenuItem ravioli = new MenuItem("Ravioli di ricotta e spinaci", "Ravioli rellenos de ricotta y espinacas con salsa de tomate", 20.99, "Platos principales", restaurant);
+        MenuItem risotto = new MenuItem("Risotto ai funghi", "Risotto con champiñones, queso parmesano y vino blanco", 19.99, "Platos principales", restaurant);
+        MenuItem tiramisu = new MenuItem("Tiramisú", "Bizcochos de soletilla empapados en café, crema de mascarpone y cacao en polvo", 8.99, "Postres", restaurant);
+        MenuItem pannaCotta = new MenuItem("Panna cotta", "Flan de nata con coulis de frutos rojos", 7.99, "Postres", restaurant);
+        MenuItem cannoli = new MenuItem("Cannoli", "Tubos de masa frita rellenos de ricotta y decorados con frutas confitadas", 9.99, "Postres", restaurant);
+        MenuItem gelato = new MenuItem("Gelato", "Helado italiano de varios sabores", 6.99, "Postres", restaurant);
+        MenuItem affogato = new MenuItem("Affogato al caffè", "Helado de vainilla con un expreso caliente", 7.99, "Postres", restaurant);
 
         this.menuRepo.save(ensaladaCaprese);
         this.menuRepo.save(bruschetta);
