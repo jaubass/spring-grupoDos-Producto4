@@ -35,19 +35,15 @@ public class SecurityConfig {
                 .exceptionHandling(c -> c.authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED)))
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/auth/signin").permitAll()
-                        // .requestMatchers("/apo/auth/signin").permitAll()
                         .requestMatchers(HttpMethod.GET, "/error").permitAll()          // Development
-                        // .requestMatchers(HttpMethod.GET, "/apo/error").permitAll()          // Development
-                        // .requestMatchers(HttpMethod.GET, "/apo/restaurants/**").permitAll()
+
                         .requestMatchers(HttpMethod.GET, "/restaurants/**").permitAll()
+                        
                         .requestMatchers(HttpMethod.GET, "/menu/**").permitAll()
-                        // .requestMatchers(HttpMethod.GET, "/apo/menu/**").permitAll()
-                        // .requestMatchers(HttpMethod.POST, "/menu/**").permitAll()
-                        // .requestMatchers(HttpMethod.GET, "/api/menu/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/menu/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/menu/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/menu/**").hasRole("ADMIN")
-                        
+
                         .requestMatchers(HttpMethod.GET, "/vehicles/**").permitAll()
                         .requestMatchers(HttpMethod.DELETE, "/vehicles/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.GET, "/v1/vehicles/**").permitAll()
