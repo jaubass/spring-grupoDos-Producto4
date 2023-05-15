@@ -13,17 +13,17 @@ public class Restaurant {
     private Long id;
     private String name;
     private String email;
-    private int phone;
+    private String phone;
     private String adress;
     private String city;
-    private int postalCode;
+    private String postalCode;
     private String web;
     private String image="no-image.png";
 
 
     public Restaurant() {}
 
-    public Restaurant(Long id, String name, String email, int phone, String adress, String city, int postalCode, String web) {
+    public Restaurant(Long id, String name, String email, String phone, String adress, String city, String postalCode, String web) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -34,7 +34,7 @@ public class Restaurant {
         this.web = web;
     }
 
-    public Restaurant(Long id, String name, String email, int phone, String adress, String city, int postalCode, String web, String image) {
+    public Restaurant(Long id, String name, String email, String phone, String adress, String city, String postalCode, String web, String image) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -70,11 +70,11 @@ public class Restaurant {
         this.email = email;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -94,11 +94,11 @@ public class Restaurant {
         this.city = city;
     }
 
-    public int getPostalCode() {
+    public String getPostalCode() {
         return postalCode;
     }
 
-    public void setPostalCode(int postalCode) {
+    public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
 

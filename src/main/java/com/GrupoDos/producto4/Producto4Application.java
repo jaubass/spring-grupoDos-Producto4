@@ -21,12 +21,15 @@ public class Producto4Application {
 		
 		//Creamos restaurante
 		RestaurantRepository repository2 = context.getBean(RestaurantRepository.class);		
-		Restaurant restaurant1  = new Restaurant(null, "Casa Pepe", "pepefood@gmail.com", 999999999, "C/Pepe 10", "Linares", 99999, "pepefood.com");
+		Restaurant restaurant1  = new Restaurant(null, "Casa Pepe", "pepefood@gmail.com", "999999999", "C/Pepe 10", "Linares", "99999", "pepefood.com");
 		repository2.save(restaurant1);
+		
+		RestaurantRepository repository3 = context.getBean(RestaurantRepository.class);		
+		Restaurant restaurant2  = new Restaurant(null, "Casa Juan", "Juanfood@gmail.com", "999999998", "C/Juan 10", "Guarromán", "99998", "juanfood.com");
+		repository3.save(restaurant2);
 		
 		System.out.println(repository.findAll().size());
 		// repository.deleteById(1L);
-
 
 
 	}
