@@ -20,39 +20,39 @@ import java.util.Arrays;
 @Slf4j
 @RequiredArgsConstructor
 public class DataInitializer implements CommandLineRunner {
-    
+
     private final VehicleRepository vehicles;
-    
+
     private final UserRepository users;
-    
+
     private final PasswordEncoder passwordEncoder;
 
     private final RestaurantRepository restaurants;
-    
+
     private final MenuItemRepository menuRepo;
-    
+
     @Override
     public void run(String... args) {
         log.debug("initializing vehicles data...");
         Arrays.asList("moto", "car").forEach(v -> this.vehicles.saveAndFlush(Vehicle.builder().name(v).build()));
-        
+
         log.debug("printing all vehicles...");
         this.vehicles.findAll().forEach(v -> log.debug(" Vehicle :" + v.toString()));
-        
+
         this.users.save(User.builder()
                 .username("user")
                 .password(this.passwordEncoder.encode("password"))
                 .roles(Arrays.asList("ROLE_USER"))
                 .build()
         );
-        
+
         this.users.save(User.builder()
                 .username("admin")
                 .password(this.passwordEncoder.encode("password"))
                 .roles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"))
                 .build()
         );
-        
+
         log.debug("printing all users...");
         this.users.findAll().forEach(v -> log.debug(" User :" + v.toString()));
 
@@ -60,6 +60,10 @@ public class DataInitializer implements CommandLineRunner {
         this.restaurants.save(
                 new Restaurant("Casa Pepe", "pepefood@gmail.com", "999999999", "C/Pepe 10", "Linares", "99999", "pepefood.com")
         );
+        this.restaurants.save(
+                new Restaurant(null, "Casa Juan", "Juanfood@gmail.com", "999999998", "C/Juan 10", "Guarromán", "99998", "juanfood.com")
+        );
+
 
         // Add MenuItems to DB
         Restaurant restaurant = this.restaurants.getReferenceById(1L);
