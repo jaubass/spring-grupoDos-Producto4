@@ -61,7 +61,7 @@ public class DataInitializer implements CommandLineRunner {
                 new Restaurant("Casa Pepe", "pepefood@gmail.com", "999999999", "C/Pepe 10", "Linares", "99999", "pepefood.com")
         );
         this.restaurants.save(
-                new Restaurant(null, "Casa Juan", "Juanfood@gmail.com", "999999998", "C/Juan 10", "Guarromán", "99998", "juanfood.com")
+                new Restaurant("Casa Juan", "Juanfood@gmail.com", "999999998", "C/Juan 10", "Guarromán", "99998", "juanfood.com")
         );
 
 
