@@ -34,6 +34,7 @@ public class SecurityConfig {
                 .sessionManagement(c -> c.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .exceptionHandling(c -> c.authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED)))
                 .authorizeHttpRequests(authorize -> authorize
+                        .requestMatchers("/user/**").permitAll()
                         .requestMatchers("/auth/signin").permitAll()
                         .requestMatchers(HttpMethod.GET, "/error").permitAll()          // Development
 
